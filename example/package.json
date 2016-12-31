@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify --debug index.js > bundle.js"
+  },
+  "author": "Mark Feltner",
+  "license": "MIT",
+  "dependencies": {
+    "fine-uploader": "5.11.10"
+  },
+  "devDependencies": {
+    "browserify": "13.1.1"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "redux-fine-uploader",
+  "version": "0.0.0",
+  "description": "Enables FineUploader to store its all of its state with Redux",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd ./example && npm install && npm run example && open example/index.html",
+    "example": "cd ./example && npm run build",
+    "test": "tape test"
+  },
+  "author": "Mark Feltner",
+  "license": "MIT",
+  "dependencies": {
+    "redux": "3.6.0"
+  },
+  "devDependencies": {
+    "fine-uploader": "5.11.10",
+    "jsdom": "9.9.1",
+    "jsdom-global": "2.1.1",
+    "tape": "4.6.3"
+  }
+}
