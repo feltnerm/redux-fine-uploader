@@ -15,7 +15,7 @@ fineUploaderEl.id = 'fine-uploader'
 document.body.appendChild(fineUploaderEl)
 
 const callbacks = wrapCallbacks(UPLOADER_NAME, store.dispatch, {
-    onSubmit: ([id, filename]) => {
+    onSubmit: (id, filename) => {
         console.log(`onSubmit callback for: #${id} - ${filename}`)
         console.log('state: ', store.getState())
     }

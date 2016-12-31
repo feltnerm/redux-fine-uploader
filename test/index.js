@@ -44,7 +44,7 @@ test('callbacks', t => {
     t.ok(wrappedCallbacks.onSubmit, 'onSubmit is a default callback because we dispatch an action in it')
 
     wrappedCallbacks = wrapCallbacks(TEST_UPLOADER_NAME, store.dispatch, {
-        onSubmit: ([first, second]) => {
+        onSubmit: (first, second) => {
             t.equals(first, 'w00t')
             t.equals(second, 'sauce')
         },
