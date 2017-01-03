@@ -3,6 +3,10 @@ redux-fine-uploader
 
 :microscope: *Experimental!* :microscope:
 
+[![Experimental!](https://img.shields.io/badge/experiment-%F0%9F%94%AC-ff69b4.svg?style=flat-square)]() [![Build Status](https://img.shields.io/travis/feltnerm/redux-fine-uploader.svg?style=flat-square)](https://travis-ci.org/feltnerm/redux-fine-uploader)
+
+
+
 Still a _ton_ of work to do here: I'm not happy w/ the
 public API, _all_ of Fine Uploader's callbacks and their parameters must be
 defined and handled, and much more. Treat this as a public proof of concept.
