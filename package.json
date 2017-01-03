@@ -4,8 +4,8 @@
   "description": "Enables FineUploader to store its all of its state with Redux",
   "main": "index.js",
   "scripts": {
-    "postinstall": "cd ./example && npm install && npm run example && open example/index.html",
-    "example": "cd ./example && npm run build",
+    "example-simple": "cd ./examples/simple && npm run build",
+    "example-react": "cd ./examples/react && npm run build",
     "test": "tape test"
   },
   "author": "Mark Feltner",
