@@ -32,6 +32,23 @@ Ends up looking like this:
 Minimal example in `./example`. Run with `npm run example` from root, or `npm
 run build` from the example directory.
 
+#### Quick Setup
+
+##### Reducer
+```
+const redux = require('redux')
+
+const reduxFineUploader = require('../../..')
+const { reducer } = reduxFineUploader
+
+const makeReducer = () => reducer()
+const makeStore = () => redux.createStore(redux.combineReducers({
+    uploader: makeReducer()
+}))
+
+module.exports = makeStore
+```
+
 #### Todo
 
 - Patch all of Fine Uploader's callbacks so they use `dispatch`.
