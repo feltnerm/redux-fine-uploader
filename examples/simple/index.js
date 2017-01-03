@@ -1,7 +1,7 @@
 const redux = require('redux')
 const qq = require('fine-uploader/lib/traditional')
 
-const reduxFineUploader = require('../')
+const reduxFineUploader = require('../..')
 const { reducer, wrapCallbacks } = reduxFineUploader
 
 const UPLOADER_NAME = 'example'
@@ -15,13 +15,16 @@ fineUploaderEl.id = 'fine-uploader'
 document.body.appendChild(fineUploaderEl)
 
 const callbacks = wrapCallbacks(UPLOADER_NAME, store.dispatch, {
-    onSubmit: (id, filename) => {
-        console.log(`onSubmit callback for: #${id} - ${filename}`)
-        console.log('state: ', store.getState())
-    }
+  onSubmit: (id, filename) => {
+    console.log(`onSubmit callback for: #${id} - ${filename}`)
+    console.log('state: ', store.getState())
+  }
 })
 
-const uploader = new qq.FineUploader({
+const uploader = () => {
+  return new qq.FineUploader({
     element: document.getElementById('fine-uploader'),
     callbacks
-})
+  })
+}
+uploader()
